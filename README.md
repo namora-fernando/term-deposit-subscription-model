@@ -1,7 +1,9 @@
 # Data-Driven Term Deposit Subscription Modeling for Marketing Campaigns
 
 <center>
+
 *[Live Demo on Hugging Face Spaces](https://huggingface.co/spaces/namorafn7/term-deposit-subscription-model)* <br>
+
 </center>
 
 See the [Model Deployment section](#model-deployment) below for implementation details and instructions.
@@ -144,9 +146,11 @@ The deployed application consists of two main pages:
 - **EDA Page** <br>
   ![EDA-page-views](screenshot-page/EDA-page.png) <br>
   Visitors can scroll through the page to explore interactive visualizations and insights.
+
 - **Prediction Page** <br>
   ![Prediction-page-views](screenshot-page/Prediction-page.png) <br>
   This page provides the user interface for entering customer data.
+
 - **Prediction Example** <br>
   ![Prediction-page-example](screenshot-page/Prediction-example.png) <br>
   Example of a prediction result generated from user input.
