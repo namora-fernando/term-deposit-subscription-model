@@ -1,0 +1,9 @@
+# ignore venv
+.venv
+
+# ignore data and model in directory deployment/src/
+deployment/src/bank-full.csv
+deployment/src/term_depo_predictor.pkl
+
+# ignore directory deployment/src/__pycache__/
+deployment/src/__pycache__/

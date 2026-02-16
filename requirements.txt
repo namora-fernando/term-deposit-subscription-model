@@ -1,0 +1,8 @@
+pandas
+numpy
+seaborn
+matplotlib
+scipy==1.13.1
+phik==0.12.5
+scikit-learn==1.6.1
+feature_engine==1.8.3
