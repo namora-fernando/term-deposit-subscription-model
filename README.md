@@ -1,6 +1,6 @@
 # Data-Driven Term Deposit Subscription Modeling for Marketing Campaigns
-*[Hugging Face Model Deployment](https://huggingface.co/spaces/namorafn7/term-deposit-subscription-model)*
-
+*[Hugging Face Model Deployment](https://huggingface.co/spaces/namorafn7/term-deposit-subscription-model)* <br>
+For website application details and instructions, please refer to the [Model Deployment section](##model-deployment)
 
 ## Repository Outline
 
@@ -120,3 +120,29 @@ The modeling approach in this project consists of the below steps:
 
 4. **Final Evaluation and Interpretation**   
     The final tuned model is evaluated using **confusion matrix** on both training and test sets. The results are analyzed of **advantages and weaknesses** of the model and refer to business-related domain from the main objective to improve marketing campaign targeting.
+
+---
+
+## Model Deployment
+
+For live model interaction, kindly visit the following link *[Hugging Face Model Deployment](https://huggingface.co/spaces/namorafn7/term-deposit-subscription-model)*.
+
+The deployed application consists of two main pages:
+
+1. **EDA page**   
+   This page presents visualizations and insights based on the historical dataset (`bank-full.csv`).   
+   Users can explore the data patterns and unsertand the background analysis used before modeling.
+2. **Prediction page**   
+   This page allows users to input customer information and obtain real-time predictions from the deployed machine learning model built with Streamlit.
+
+### Screenshots of the Web Application
+
+- **EDA Page** <br>
+  ![EDA-page-views](screenshot-page/EDA-page.png) <br>
+  Visitors can scroll through the page to explore interactive visualizations and insights.
+- **Prediction Page** <br>
+  ![Prediction-page-views](screenshot-page/Prediction-page.png) <br>
+  This page provides the user interface for entering customer data.
+- **Prediction Example** <br>
+  ![Prediction-page-example](screenshot-page/Prediction-example.png) <br>
+  Example of a prediction result generated from user input.
