@@ -1,4 +1,5 @@
 # Data-Driven Term Deposit Subscription Modeling for Marketing Campaigns
+*[Hugging Face Model Deployment](https://huggingface.co/spaces/namorafn7/term-deposit-subscription-model)*
 
 
 ## Repository Outline
@@ -13,13 +14,29 @@ term-deposit-subscription-model
 │   │   └── prediction.py               # Model deployment prediction based on user input with streamlit
 │   ├── Dockerfile                      # Dockerfile for Hugging Face deployment
 │   └── requirements.txt                # Installations python libraries for model deployment
-├─ P1M2_fernando_namora.ipynb           # Notebook of modeling process for prediction term deposit subscriber based on bank marketing campaigns historical data
-├─ P1M2_fernando_namora_inf.ipynb       # Notebook of inference model from main notebook to predict data inference
-├─ P1M2_fernando_namora_conceptual.txt  # The answer of conceptual problems topic of bagging, boosting, and cross-validation
-├─ url.txt                              # The list of url dataset source, url model, and url deployment
+├─ notebook.ipynb                       # Notebook of modeling process for prediction term deposit subscriber based on bank marketing campaigns historical data
+├─ notebook_inferenec.ipynb             # Notebook of inference model from main notebook to predict data inference
 ├─ bankfull.csv                         # Original dataset from UCI Machine Learning Repository
-└─ descriptions.md                      # Project overview explanation
+├─ term_depo_predictor.pkl              # The model created from `notebook.ipynb`
+├─ requirements.txt                     # Python dependencies
+└─ README.md                            # Project overview explanation
 ```
+
+## Stacks
+
+All of the program used in notebook used **python** programming language :
+- **EDA libraries**: `pandas`, `numpy`, `scipy`, `matplotlib`, `seaborn`
+- **Machine Learning libraries**: `scikit-learn`, `feature_engine`, `phik`
+- **Built-in libraries** for model saving: `pickle`
+> Versions of libraries used: `scipy==1.13.1`, `phik==0.12.5`, `scikit-learn==1.6.1`, and `feature_engine==1.8.3`   
+
+To install dependencies, kindly install all stacks on `requirements.txt`
+```py
+pip install -r requirements.txt
+```
+> **Version of python used: 3.9**
+
+---
 
 
 ## Problem Background
@@ -31,7 +48,7 @@ Deposits are an important source of stable funding for banks. One of the financi
 
 This project output includes business understanding, data understanding, exploratory data analysis (EDA), feature engineering, and the modeling process that resulted to be used for future marketing campaigns. The modeling process involves a comparison of five algorithms: KNN, SVM, Decision Tree, Random Forest, and AdaBoost. The best model is selected using the precision score and cross-validation within a pipeline to ensure an end-to-end process while preventing data leakage from the test set. The selected best model then conducted hyperparameter tuning to find best hyperparameter. The final selected model then evaluated with confusion matrix, results with precision score higher than 70 % on both training and test dataset, and can be used for model inference with unseen data. The EDA and machine learning model also deployed on Hugging Face platform.
 
-### Python Notebook Outline (primary notebook)
+### Python Notebook Outline (main notebook)
 
 - **i. Introduction**:
   > The introduction of the author information, dataset source and information, problem statement, and objective for this project
@@ -56,6 +73,7 @@ This project output includes business understanding, data understanding, explora
 - **xi. Conclusion**: <br>
   > Conclusion of the overall process of this project includes EDA, modeling process, the resulted model, and model evaluation with related information and analysis to answer business problem stated in objective section
 
+---
 
 ## Data
 
@@ -102,19 +120,3 @@ The modeling approach in this project consists of the below steps:
 
 4. **Final Evaluation and Interpretation**   
     The final tuned model is evaluated using **confusion matrix** on both training and test sets. The results are analyzed of **advantages and weaknesses** of the model and refer to business-related domain from the main objective to improve marketing campaign targeting.
-
-
-## Stacks
-
-All of the program used in notebook used **python** programming language :
-- **EDA libraries**: `pandas`, `numpy`, `scipy`, `matplotlib`, `seaborn`
-- **Machine Learning libraries**: `scikit-learn`, `feature_engine`, `phik`
-- **Built-in libraries** for model saving: `pickle`
-> Versions of libraries used: `scipy==1.13.1`, `phik==0.12.5`, `scikit-learn==1.6.1`, and `feature_engine==1.8.3`   
-> **Version of python used: 3.9**
-
-
-## Reference
-
-- Data source reference: https://archive.ics.uci.edu/dataset/222/bank+marketing
-- [Hugging Face Model Deployment](https://huggingface.co/spaces/namorafn7/term-deposit-subscription-model)
