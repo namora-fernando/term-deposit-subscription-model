@@ -1,6 +1,10 @@
 # Data-Driven Term Deposit Subscription Modeling for Marketing Campaigns
+
+<center>
 *[Live Demo on Hugging Face Spaces](https://huggingface.co/spaces/namorafn7/term-deposit-subscription-model)* <br>
-See the [Model Deployment section](##model-deployment) below for implementation details and instructions.
+</center>
+
+See the [Model Deployment section](#model-deployment) below for implementation details and instructions.
 
 ## Repository Outline
 
