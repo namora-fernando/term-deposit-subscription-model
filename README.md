@@ -15,17 +15,17 @@ term-deposit-subscription-model
 |
 ├── deployment/
 │   ├── src/
-│   │   ├── streamlit_app.py     # Streamlit app for model deployment core
-│   │   ├── eda.py               # Model deployment EDA section with streamlit
-│   │   └── prediction.py        # Model deployment prediction based on user input with streamlit
-│   ├── Dockerfile               # Dockerfile for Hugging Face deployment
-│   └── requirements.txt         # Installations python libraries for model deployment
-├─ notebook.ipynb                # Notebook of modeling process for prediction term deposit subscriberdata
-├─ notebook_inference.ipynb      # Notebook of inference model from main notebook to predict unseen data
-├─ bankfull.csv                  # Original dataset from UCI Machine Learning Repository
-├─ term_depo_predictor.pkl       # The model created from `notebook.ipynb`
-├─ requirements.txt              # Python dependencies
-└─ README.md                     # Project overview explanation
+│   │   ├── streamlit_app.py    # Streamlit app for model deployment core
+│   │   ├── eda.py              # Model deployment EDA section with streamlit
+│   │   └── prediction.py       # Model deployment prediction based on user input with streamlit
+│   ├── Dockerfile              # Dockerfile for Hugging Face deployment
+│   └── requirements.txt        # Installations python libraries for model deployment
+├─ notebook.ipynb               # Notebook of modeling process for prediction term deposit subscriber
+├─ notebook_inference.ipynb     # Notebook of inference model from main notebook to predict unseen data
+├─ bankfull.csv                 # Original dataset from UCI Machine Learning Repository
+├─ term_depo_predictor.pkl      # The model created from `notebook.ipynb`
+├─ requirements.txt             # Python dependencies
+└─ README.md                    # Project overview explanation
 ```
 
 ## Stacks
