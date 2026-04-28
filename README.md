@@ -137,7 +137,7 @@ The deployed application consists of two main pages:
 
 1. **EDA page**   
    This page presents visualizations and insights based on the historical dataset (`bank-full.csv`).   
-   Users can explore the data patterns and unsertand the background analysis used before modeling.
+   Users can explore the data patterns and understand the background analysis used before modeling.
 2. **Prediction page**   
    This page allows users to input customer information and obtain real-time predictions from the deployed machine learning model built with Streamlit.
 
